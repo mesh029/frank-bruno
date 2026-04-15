@@ -1,11 +1,25 @@
 import { BriefcaseBusiness, CalendarCheck2, Headset, Mail, MessageCircleMore } from "lucide-react"
 
 function App() {
-  const services = [
-    "Inbox and calendar management for founders and teams",
-    "Travel planning, meeting coordination, and schedule cleanup",
-    "Client follow-up workflows using clear, warm communication",
-    "Administrative support for small businesses and solo professionals",
+  const coreSkills = [
+    "Executive and administrative support",
+    "Operations and workflow coordination",
+    "Task and project tracking systems",
+    "CRM and client engagement tracking",
+    "Email and calendar management",
+    "Data tracking, reporting, and dashboards",
+    "Social media content support (Canva)",
+    "Research and information synthesis",
+    "AI tools (ChatGPT for content and workflows)",
+    "Google Workspace (Docs, Sheets, Drive, Calendar)",
+    "Attention to detail and process improvement",
+  ]
+
+  const systemsExperience = [
+    "Task and workflow tracking: designed simple To-do/In-progress/Completed systems to manage multiple activities and ensure accountability.",
+    "Client/activity tracking: maintained structured records from initiation to completion with consistent follow-ups.",
+    "Reporting systems: developed structured weekly and monthly update formats to improve visibility and decision-making.",
+    "Content support: created presentations and visual content in Canva for reporting and communication.",
   ]
 
   const articles = [
@@ -44,7 +58,8 @@ function App() {
           </p>
           <nav className="hidden gap-6 text-sm text-muted-foreground md:flex">
             <a href="#about" className="transition-colors hover:text-foreground">About</a>
-            <a href="#services" className="transition-colors hover:text-foreground">Services</a>
+            <a href="#skills" className="transition-colors hover:text-foreground">Skills</a>
+            <a href="#experience" className="transition-colors hover:text-foreground">Experience</a>
             <a href="#articles" className="transition-colors hover:text-foreground">Articles</a>
             <a href="#contact" className="transition-colors hover:text-foreground">Contact</a>
           </nav>
@@ -55,13 +70,13 @@ function App() {
         <section className="grid gap-10 border-b border-border/70 pb-12 md:grid-cols-[1.1fr_1fr]">
           <div className="space-y-6">
             <p className="inline-flex rounded-full border border-primary/20 bg-primary/8 px-3 py-1 text-xs font-medium tracking-wide text-primary">
-              Virtual Assistant | 2 Years Experience
+              Executive Assistant | Operations and Administration
             </p>
             <h1 className="text-4xl font-semibold tracking-tight text-balance md:text-5xl">
-              Reliable virtual support that gives busy professionals their time back.
+              Proactive executive support for fast-paced, project-based teams.
             </h1>
             <p className="max-w-xl text-base leading-relaxed text-muted-foreground">
-              I help founders and small teams stay organized, communicate faster, and run smoother back-office operations. Calm execution, clean systems, and consistent follow-through.
+              Detail-oriented Executive Assistant with strong experience in operations support, financial administration, and workflow coordination. I support leadership with calendar and communication management, structured tracking systems, and seamless task execution across workstreams.
             </p>
             <div className="flex flex-wrap gap-3">
               <a
@@ -77,7 +92,7 @@ function App() {
                 className="inline-flex items-center gap-2 rounded-md border border-border px-4 py-2 text-sm font-medium transition-colors hover:bg-muted"
               >
                 <MessageCircleMore className="size-4" />
-                Book a Discovery Call
+                Get in Touch
               </a>
             </div>
           </div>
@@ -91,15 +106,15 @@ function App() {
             <div className="space-y-4 text-sm">
               <div className="flex items-start gap-3">
                 <CalendarCheck2 className="mt-0.5 size-4 text-primary" />
-                <p className="text-muted-foreground">200+ calendar events coordinated across time zones.</p>
+                <p className="text-muted-foreground">Strong leadership support through scheduling, follow-ups, and communication coordination.</p>
               </div>
               <div className="flex items-start gap-3">
                 <Mail className="mt-0.5 size-4 text-primary" />
-                <p className="text-muted-foreground">Inbox, response, and follow-up workflows tailored per client.</p>
+                <p className="text-muted-foreground">Hands-on experience in reporting, budget/expense tracking, and structured documentation workflows.</p>
               </div>
               <div className="flex items-start gap-3">
                 <BriefcaseBusiness className="mt-0.5 size-4 text-primary" />
-                <p className="text-muted-foreground">Trusted by coaches, consultants, and small business owners.</p>
+                <p className="text-muted-foreground">Google Workspace, Canva, and practical use of ChatGPT to streamline tasks and research.</p>
               </div>
             </div>
           </div>
@@ -109,33 +124,87 @@ function App() {
           <div className="space-y-4">
             <h2 className="text-3xl font-semibold tracking-tight">About Frank</h2>
             <p className="leading-relaxed text-muted-foreground">
-              Over the past two years, I have worked behind the scenes with professionals who needed structure in their day-to-day operations. My work combines practical admin support with proactive communication, so clients spend less time chasing details and more time on growth.
+              Proactive and detail-oriented Executive Assistant with a strong background in operations support, financial administration, and workflow coordination within fast-paced, project-based environments. Experienced in supporting leadership through calendar and communication management, building structured tracking systems, and ensuring seamless execution of tasks across multiple workstreams.
             </p>
             <p className="leading-relaxed text-muted-foreground">
-              I am especially strong at managing moving parts: scheduling, follow-ups, records, recurring tasks, and simple process documentation. When things are clear and predictable, teams perform better.
+              Skilled in Google Workspace, data tracking, reporting, and content creation using Canva, with growing experience in AI tools such as ChatGPT to streamline workflows, draft content, and accelerate research. Currently pursuing CPA certification to strengthen analytical and financial management capabilities.
             </p>
           </div>
           <div className="space-y-4 border-l border-border pl-6">
-            <h3 className="text-lg font-medium">Core tools</h3>
+            <h3 className="text-lg font-medium">Education</h3>
             <p className="text-sm text-muted-foreground">
-              Google Workspace, Notion, Trello, Asana, Slack, Zoom, and Calendly.
+              Maseno University (2019 - 2023)
+              <br />
+              Bachelor of Art in Economics with IT
             </p>
-            <h3 className="text-lg font-medium">Work style</h3>
+            <h3 className="text-lg font-medium">Professional training</h3>
             <p className="text-sm text-muted-foreground">
-              Detail-oriented, discreet, and deadline-conscious with clean handover notes.
+              Humanitarian Leadership Academy (2025)
+              <br />
+              Monitoring, Evaluation, Accountability and Learning for Development Professionals
+            </p>
+            <h3 className="text-lg font-medium">Languages</h3>
+            <p className="text-sm text-muted-foreground">
+              Kiswahili (Fluent), English (Fluent)
             </p>
           </div>
         </section>
 
-        <section id="services" className="space-y-5 border-b border-border/70 pb-12">
-          <h2 className="text-3xl font-semibold tracking-tight">Services</h2>
+        <section id="skills" className="space-y-5 border-b border-border/70 pb-12">
+          <h2 className="text-3xl font-semibold tracking-tight">Core Skills</h2>
           <div className="grid gap-x-12 gap-y-4 text-muted-foreground md:grid-cols-2">
-            {services.map((service) => (
-              <p key={service} className="border-b border-border/60 pb-3 text-sm leading-relaxed">
-                {service}
+            {coreSkills.map((skill) => (
+              <p key={skill} className="border-b border-border/60 pb-3 text-sm leading-relaxed">
+                {skill}
               </p>
             ))}
           </div>
+        </section>
+
+        <section id="experience" className="space-y-8 border-b border-border/70 pb-12">
+          <h2 className="text-3xl font-semibold tracking-tight">Experience</h2>
+
+          <article className="space-y-3 border-b border-border/60 pb-6">
+            <div className="flex flex-wrap items-baseline justify-between gap-2">
+              <h3 className="text-xl font-semibold tracking-tight">Operations and Executive Support Assistant (Finance and Administration)</h3>
+              <p className="text-sm text-primary">Jan 2024 - Sep 2025</p>
+            </div>
+            <p className="text-sm font-medium text-muted-foreground">Geno Community Development Initiative (GCDI)</p>
+            <ul className="space-y-2 text-sm leading-relaxed text-muted-foreground">
+              <li>Supported leadership and program teams by coordinating communication, scheduling activities, and ensuring timely follow-ups across multiple operational regions.</li>
+              <li>Built and maintained structured tracking systems in Google Sheets to monitor project activities, financial flows, and reporting timelines.</li>
+              <li>Managed documentation workflows and ensured all records were accurate, organized, and accessible in Google Drive.</li>
+              <li>Coordinated with internal teams and external stakeholders to ensure smooth execution of tasks and timely deliverables.</li>
+              <li>Assisted in preparing reports by compiling operational and financial data into structured formats for decision-making.</li>
+              <li>Tracked budgets, expenses, and supporting documentation to align with project plans and compliance requirements.</li>
+              <li>Identified process gaps and introduced improvements in tracking/reporting systems, reducing delays and improving efficiency.</li>
+            </ul>
+          </article>
+
+          <article className="space-y-3 border-b border-border/60 pb-6">
+            <div className="flex flex-wrap items-baseline justify-between gap-2">
+              <h3 className="text-xl font-semibold tracking-tight">Administrative and Operations Support Assistant</h3>
+              <p className="text-sm text-primary">May 2020 - May 2023</p>
+            </div>
+            <p className="text-sm font-medium text-muted-foreground">World Vision</p>
+            <ul className="space-y-2 text-sm leading-relaxed text-muted-foreground">
+              <li>Provided administrative and operational support including email coordination, scheduling, and document management for program teams.</li>
+              <li>Maintained organized records and tracking systems for activities, financial data, and reporting requirements.</li>
+              <li>Supported data entry, reconciliation, and validation processes to ensure accuracy and completeness of records.</li>
+              <li>Assisted in coordinating meetings, preparing documentation, and following up action points.</li>
+              <li>Contributed to structured reports and presentations for internal and external stakeholders.</li>
+              <li>Improved document organization and accessibility with clear filing systems and standardized templates.</li>
+            </ul>
+          </article>
+
+          <article className="space-y-4">
+            <h3 className="text-xl font-semibold tracking-tight">Project and Systems Experience</h3>
+            <ul className="space-y-2 text-sm leading-relaxed text-muted-foreground">
+              {systemsExperience.map((item) => (
+                <li key={item}>{item}</li>
+              ))}
+            </ul>
+          </article>
         </section>
 
         <section id="articles" className="space-y-6">
