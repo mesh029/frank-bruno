@@ -1,4 +1,4 @@
-import { BriefcaseBusiness, CalendarCheck2, Mail, MessageCircleMore } from "lucide-react"
+import { BriefcaseBusiness, CalendarCheck2, Headset, Mail, MessageCircleMore } from "lucide-react"
 
 function App() {
   const services = [
@@ -35,8 +35,13 @@ function App() {
   return (
     <div className="min-h-screen bg-background text-foreground">
       <header className="sticky top-0 z-20 border-b border-border/70 bg-background/90 backdrop-blur">
-        <div className="mx-auto flex max-w-6xl items-center justify-between px-6 py-4">
-          <p className="text-sm font-semibold tracking-wide text-primary">Frank Bruno</p>
+        <div className="flex w-full items-center justify-between px-6 py-4 lg:px-12">
+          <p className="inline-flex items-center gap-2 text-sm font-semibold tracking-wide text-primary">
+            <span className="inline-flex size-7 items-center justify-center rounded-md bg-primary text-primary-foreground">
+              <Headset className="size-4" />
+            </span>
+            Frank Bruno
+          </p>
           <nav className="hidden gap-6 text-sm text-muted-foreground md:flex">
             <a href="#about" className="transition-colors hover:text-foreground">About</a>
             <a href="#services" className="transition-colors hover:text-foreground">Services</a>
@@ -46,8 +51,8 @@ function App() {
         </div>
       </header>
 
-      <main className="mx-auto flex w-full max-w-6xl flex-col gap-18 px-6 py-12 md:py-16">
-        <section className="grid gap-10 rounded-2xl border border-border bg-card px-6 py-10 shadow-sm md:grid-cols-2 md:px-10">
+      <main className="flex w-full flex-col gap-16 px-6 py-12 md:py-16 lg:px-12">
+        <section className="grid gap-10 border-b border-border/70 pb-12 md:grid-cols-[1.1fr_1fr]">
           <div className="space-y-6">
             <p className="inline-flex rounded-full border border-primary/20 bg-primary/8 px-3 py-1 text-xs font-medium tracking-wide text-primary">
               Virtual Assistant | 2 Years Experience
@@ -76,14 +81,14 @@ function App() {
               </a>
             </div>
           </div>
-          <div className="space-y-4 rounded-xl border border-border/70 bg-gradient-to-br from-primary/10 via-background to-background p-6">
+          <div className="space-y-4">
             <img
               src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&w=1200&q=80"
               alt="Virtual assistant working on a laptop with planner notes"
-              className="h-48 w-full rounded-lg object-cover"
+              className="h-72 w-full rounded-xl object-cover shadow-sm"
             />
             <p className="text-sm font-semibold text-primary">At a glance</p>
-            <div className="mt-5 space-y-4 text-sm">
+            <div className="space-y-4 text-sm">
               <div className="flex items-start gap-3">
                 <CalendarCheck2 className="mt-0.5 size-4 text-primary" />
                 <p className="text-muted-foreground">200+ calendar events coordinated across time zones.</p>
@@ -100,7 +105,7 @@ function App() {
           </div>
         </section>
 
-        <section id="about" className="grid gap-8 md:grid-cols-[1.2fr_1fr]">
+        <section id="about" className="grid gap-8 border-b border-border/70 pb-12 md:grid-cols-[1.2fr_1fr]">
           <div className="space-y-4">
             <h2 className="text-3xl font-semibold tracking-tight">About Frank</h2>
             <p className="leading-relaxed text-muted-foreground">
@@ -110,25 +115,25 @@ function App() {
               I am especially strong at managing moving parts: scheduling, follow-ups, records, recurring tasks, and simple process documentation. When things are clear and predictable, teams perform better.
             </p>
           </div>
-          <div className="rounded-xl border border-border bg-muted/30 p-6">
+          <div className="space-y-4 border-l border-border pl-6">
             <h3 className="text-lg font-medium">Core tools</h3>
-            <p className="mt-2 text-sm text-muted-foreground">
+            <p className="text-sm text-muted-foreground">
               Google Workspace, Notion, Trello, Asana, Slack, Zoom, and Calendly.
             </p>
-            <h3 className="mt-6 text-lg font-medium">Work style</h3>
-            <p className="mt-2 text-sm text-muted-foreground">
+            <h3 className="text-lg font-medium">Work style</h3>
+            <p className="text-sm text-muted-foreground">
               Detail-oriented, discreet, and deadline-conscious with clean handover notes.
             </p>
           </div>
         </section>
 
-        <section id="services" className="space-y-5">
+        <section id="services" className="space-y-5 border-b border-border/70 pb-12">
           <h2 className="text-3xl font-semibold tracking-tight">Services</h2>
-          <div className="grid gap-4 md:grid-cols-2">
+          <div className="grid gap-x-12 gap-y-4 text-muted-foreground md:grid-cols-2">
             {services.map((service) => (
-              <div key={service} className="rounded-xl border border-border bg-card p-5 text-sm leading-relaxed text-muted-foreground shadow-sm">
+              <p key={service} className="border-b border-border/60 pb-3 text-sm leading-relaxed">
                 {service}
-              </div>
+              </p>
             ))}
           </div>
         </section>
@@ -142,7 +147,7 @@ function App() {
           </div>
           <div className="grid gap-6">
             {articles.map((article) => (
-              <article key={article.title} className="rounded-xl border border-border bg-card p-6 shadow-sm">
+              <article key={article.title} className="border-b border-border/70 pb-6 last:border-none">
                 <p className="text-xs font-medium tracking-wide text-primary">{article.date}</p>
                 <h3 className="mt-2 text-2xl font-semibold tracking-tight">{article.title}</h3>
                 <p className="mt-3 text-sm leading-relaxed text-muted-foreground">{article.excerpt}</p>
@@ -154,7 +159,7 @@ function App() {
           </div>
         </section>
 
-        <section id="contact" className="rounded-2xl border border-border bg-primary/8 px-6 py-8">
+        <section id="contact" className="border-t border-border/70 pt-6">
           <h2 className="text-3xl font-semibold tracking-tight">Get in touch</h2>
           <p className="mt-3 max-w-2xl text-muted-foreground">
             Need help running your daily operations smoothly? I am available for part-time and retainer support.
